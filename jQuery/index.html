@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="pt-br"> 
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Ayanokozay</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<style>
+		body { overflow-x: hidden; overflow-y: hidden; }
+		p { width: 500px; }
+		.scrollv { overflow-y: auto; }
+	</style>
+
+	<noscript>
+		<style>
+			body { overflow-x: auto; overflow-y: auto; }
+		</style>
+	</noscript>
+</head>
+
+<body>
+
+	<div id="teste">
+
+		<div id="stage" class="stage">
+			<h1>PEGENALAN</h1>
+			<img src="img/aku.jpg" style="width: 30%;">
+			<p>NAMA : M. Zainul Ulum</p>
+			<p>NIM : 20050974028</p>
+			<p>KELAS : PTI 2020 B</p>
+			<p>PRODI : S1 Pendidikan Teknologi Informasi</p>
+			<a href="#stage2">Go to BIOGRAFI</a>
+		</div>
+
+		<div id="stage2" class="stage scrollv">
+			<h1>BIOGRAFI</h1>
+			<h2>Tentang Aku</h2>
+
+			<a href="#stage3">Go to HOBI</a>
+
+			<p>Aku adalah seorang mahasiswa Universitas Negeri Surabaya angkatan 2020. Aku lahir pada tanggal 13 Agustus 2002 di salah satu kota kecil di Jawa timur yaitu Lamongan. Aku tinggal di salah satu desa di Lamongan yang terkenal dengan sebutan desa pancasila.</p>
+			<p>Sekarang Aku menginjak umur 19 tahun, dan sedang menjalankan pendidikan S1 pada semester 4. Semenjak masuk dunia perkuliahan Aku belum pernah merasakan kuliah di dalam kelas karena keadaan sekarang yang membuat kita harus belajar sejara daring.</p>
+			<p>Bisa dibilang Aku adalah seorang Introvet, bukan berarti Aku mengurung diri dan menghindar dari dunia luar tapi, Aku lebih suka menghabiskan waktu untuk orang-orang yang penting dan prioritas dalam hidup ku</p>
+
+		</div>
+
+		<div id="stage3" class="stage">
+			<h1>HOBI</h1>
+			<p>Aku suka main game online salah stunya game mobile yaitu Mobile Legends. Aku sering mengikuti turnament yang diselenggarakan oleh beberapa komunitas di kota ku.</p>
+			<p>Tidak hanya game mobile aku juga sering bermaiangame di laptop slah satunya yaitu Minecraft Java Edition. Menurutku game tersebuat sangat kompleks, pergabungan andara survival, building, PvP game ini sampai sekarang msih banyak diminati oleh banyak gamers di seluruh dunia</p>
+		
+			<a href="#stage4">Go to PESAN</a>
+		</div>
+
+		<div id="stage4" class="stage">
+			<h1>PESAN</h1>
+			<p>Jika Kamu Dikejar Oleh Beruang, Kamu Tidak Perlu Lari Secepat Mungkin, Akan tetapi Kamu Hanya Perlu Berlari di Depan Temanmu. - Zay</p>
+
+			<a href="#stage">Go to PENGENALAN</a>
+		</div>
+
+	</div>
+
+	<script src="js/libs/jquery-1.12.4.min.js"></script>
+	<script src="js/libs/jquery.scrollTo.min.js"></script>
+	<script src="js/libs/jquery.easing.min.js"></script>
+	<script src="js/jquery.fullContent.js"></script>
+	<script>
+
+		$('#teste').fullContent({
+			children: 'div',
+			mapPosition: [{v: 1, h: 1}, {v: 1, h: 2}, {v: 2, h: 1}, {v: 2, h: 2}],
+			stageStart: 1,
+			idComplement: 'page_',
+			ease: 'easeOutQuad'
+		});
+
+	</script>
+	</body>
+</html>
